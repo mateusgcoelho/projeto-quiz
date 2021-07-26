@@ -31,10 +31,10 @@ class _PerguntaAppState extends State<PerguntaApp> {
     {
       'texto': 'Qual é seu instrutor favorito?',
       'respostas': [
-        {'text': 'Maria', 'pontuacao': 10},
-        {'text': 'João', 'pontuacao': 2},
-        {'text': 'Leo', 'pontuacao': 5},
-        {'text': 'Pedro', 'pontuacao': 6},
+        {'texto': 'Maria', 'pontuacao': 10},
+        {'texto': 'João', 'pontuacao': 2},
+        {'texto': 'Leo', 'pontuacao': 5},
+        {'texto': 'Pedro', 'pontuacao': 6},
       ],
     },
   ];
@@ -67,7 +67,7 @@ class _PerguntaAppState extends State<PerguntaApp> {
                   perguntas: _perguntas,
                   perguntaSelecionada: _perguntaSelecionada,
                   responder: _responder)
-              : Resultado()),
+              : Resultado(_pontuacaoTotal)),
     );
   }
 }
